@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/user",
+    "pages/transfer/transfer"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "菲麦前端周刊",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#f05a22",
+    "borderStyle": "white",
+    "backgroundColor": "#f8f8fa",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user.png"
+      }
+    ]
+  },
+  "debug": true
+}

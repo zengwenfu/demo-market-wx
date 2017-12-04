@@ -1,0 +1,4 @@
+<!--transfer.wxml-->
+<view class="container">
+<web-view src="{{targetSrc}}"></web-view>
+</view>

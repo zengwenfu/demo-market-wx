@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for="{{weeklyData}}">
+    <view class="name {{item.toggle? 'active': '' }}" bindtap="bindViewTap" data-index="{{index}}">
+      <text>{{item.name}}</text>
+      <image wx:if="{{item.toggle}}" class="arrow" src="../../images/up_arrow.png"></image>
+      <image wx:if="{{item.toggle === false}}" class="arrow" src="../../images/down_arrow.png"></image>
+    </view>
+    <view class="feed-item" bindtap="toNextPage" data-url = "{{article.url}}" wx:if="{{item.toggle}}" wx:for="{{item.articles}}" wx:for-item="article">
+      <view class="feed-content">
+        <view class="question">{{article.title}}</view>
+        <view class="answer-body">{{article.summary}}</view>
+      </view>
+    </view>
+  </block>
+</view>
